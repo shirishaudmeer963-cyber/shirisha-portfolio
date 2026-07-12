@@ -1,0 +1,174 @@
+/* Reset */
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#eef3f8;
+    color:#111010;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#0077ff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+/* Sections */
+section{
+    background:rgba(255, 253, 254, 0.959);
+    width:80%;
+    margin:30px auto;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+}
+
+section h2{
+    color:#0077ff;
+    margin-bottom:15px;
+}
+
+section h3{
+    margin-top:15px;
+}
+
+/* Lists */
+ul{
+    margin-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
+    margin-top:30px;
+}
+
+/* Hover Effect */
+section:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+    section{
+        width:95%;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+}
+nav{
+    background:#222;
+    padding:15px;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#00c6ff;
+}
+.profile-pic{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:white;
+    color:#0077ff;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+.skill-bar{
+    background:#ddd;
+    border-radius:20px;
+    margin-bottom:15px;
+}
+
+.skill-bar div{
+    padding:8px;
+    color:white;
+    border-radius:20px;
+    text-align:center;
+}
+
+.java{
+    width:80%;
+    background:#0077ff;
+}
+
+.c{
+    width:75%;
+    background:#0077ff;
+}
+
+.html{
+    width:85%;
+    background:#0077ff;
+}
+
+.css{
+    width:70%;
+    background:#0077ff;
+}
+.project-card{
+    background:#f8f9fa;
+    padding:20px;
+    margin-top:15px;
+    border-left:5px solid #0077ff;
+    border-radius:10px;
+}
